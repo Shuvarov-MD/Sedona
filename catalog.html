@@ -31,7 +31,7 @@
         </li>
         <li class="user-navigation__item">
           <a class="user-navigation__link user-navigation__link--favorites" href="#">
-            <span class="visually-hidden">Выбрано гостиниц</span>
+            <span class="visually-hidden">Гостиниц в избранном</span>
             <span class="user-navigation__number">12</span>
           </a>
         </li>
@@ -120,8 +120,7 @@
 
       <!-- Catalog -->
       <section class="catalog">
-        <h2 class="visually-hidden">Список гостиниц</h2>
-        <p class="catalog__results title">Найдено гостиниц: 38</p>
+        <h2 class="title">Найдено гостиниц: 38</h2>
         <select class="select-sorting" name="sorting" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -129,17 +128,17 @@
         </select>
         <ul class="display-types__list">
           <li class="display-types__item">
-            <a class="display-types__link display-types__link--active" href="#">
+            <a class="display-types__link display-types__link--active" href="catalog.html?view=tile">
               <span class="visually-hidden">Отображать карточками</span>
             </a>
           </li>
           <li class="display-types__item">
-            <a class="display-types__link" href="#">
+            <a class="display-types__link" href="catalog.html?view=card">
               <span class="visually-hidden">Отображать блоками</span>
             </a>
           </li>
           <li class="display-types__item">
-            <a class="display-types__link" href="#">
+            <a class="display-types__link" href="catalog.html?view=list">
               <span class="visually-hidden">Отображать списком</span>
             </a>
           </li>
@@ -155,7 +154,7 @@
               <b class="catalog__item-price">От 4000 ₽</b>
             </p>
             <a class="catalog__item-button button button--primary" href="#">Подробнее</a>
-            <a class="catalog__item-button button button--submit" href="#">В избранное</a>
+            <button class="catalog__item-button button button--submit">В избранное</button>
             <ul class="rating__list">
               <li class="rating__item">
                 <span class="visually-hidden">1 звезда</span>
@@ -182,7 +181,7 @@
               <b class="catalog__item-price">От 5000 ₽</b>
             </p>
             <a class="catalog__item-button button button--primary" href="#">Подробнее</a>
-            <a class="catalog__item-button button button--submit" href="#">В избранное</a>
+            <button class="catalog__item-button button button--submit button--selected">В избранном</button>
             <ul class="rating__list">
               <li class="rating__item">
                 <span class="visually-hidden">1 звезда</span>
@@ -209,7 +208,7 @@
               <b class="catalog__item-price">От 2500 ₽</b>
             </p>
             <a class="catalog__item-button button button--primary" href="#">Подробнее</a>
-            <a class="catalog__item-button button button--submit" href="#">В избранное</a>
+            <button class="catalog__item-button button button--submit">В избранное</button>
             <ul class="rating__list">
               <li class="rating__item">
                 <span class="visually-hidden">1 звезда</span>
@@ -233,7 +232,7 @@
               <b class="catalog__item-price">От 1500 ₽</b>
             </p>
             <a class="catalog__item-button button button--primary" href="#">Подробнее</a>
-            <a class="catalog__item-button button button--submit" href="#">В избранное</a>
+            <button class="catalog__item-button button button--submit">В избранное</button>
             <ul class="rating__list">
               <li class="rating__item">
                 <span class="visually-hidden">1 звезда</span>
@@ -299,7 +298,7 @@
         </li>
       </ul>
       <a class="site-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="site-footer__developer" href="https://htmlacademy.ru/" target="_blank">
+      <a class="site-footer__developer" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
         <img src="#" alt="Логотип HTML Academy" width="115" height="30" loading="lazy">
       </a>
     </footer>
