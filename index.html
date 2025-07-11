@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Седона | Главная страница</title>
   </head>
   <body>
@@ -36,15 +37,17 @@
           </a>
         </li>
         <li class="user-navigation__item">
-          <a class="user-navigation__link button button--primary" href="#">Хочу сюда!</a>
+          <a class="user-navigation__link user-navigation__link--button button button--primary" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </header>
 
     <!-- Main-index -->
     <main class="main-index">
-      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-      <img class="main-index__image" src="images/welcome.svg" alt="Welcome to the gorgeous Sedona 'Because the Grand Canyon sucks!'" width="458" height="352">
+      <div class="hero">
+        <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+        <img class="main-index__image" src="images/welcome.svg" alt="Welcome to the gorgeous Sedona 'Because the Grand Canyon sucks!'" width="458" height="352">
+      </div>
 
       <!-- Advantages -->
       <section class="advantages">
@@ -105,12 +108,12 @@
 
       <!-- Subscribing -->
       <section class="subscribing">
-        <h2 class="title">Подпишитесь на рассылку</h2>
+        <h2 class="subscribing__title title">Подпишитесь на рассылку</h2>
         <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribing__form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="subscribing__input" type="email" name="email" id="subscribing-email" placeholder="Ваш e-mail" required>
           <label class="visually-hidden" for="subscribing-email">Ваш e-mail</label>
-          <button class="button button--submit" type="submit">Подписаться</button>
+          <button class="subscribing__button button button--submit" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
