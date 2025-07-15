@@ -43,7 +43,7 @@
     </header>
 
     <!-- Main-inner -->
-    <main class="main-inner">
+    <main class="main-inner container">
 
       <!-- main-inner__filter-wrapper -->
       <div class="main-inner__filter-wrapper">
@@ -125,29 +125,31 @@
 
       <!-- Catalog -->
       <section class="catalog">
-        <h2 class="title">Найдено гостиниц: 38</h2>
-        <select class="select-sorting" name="sorting" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
-          <option value="popular">Сначала популярные</option>
-        </select>
-        <ul class="display-types__list">
-          <li class="display-types__item">
-            <a class="display-types__link display-types__link--active" href="catalog.html?view=tile">
-              <span class="visually-hidden">Отображать карточками</span>
-            </a>
-          </li>
-          <li class="display-types__item">
-            <a class="display-types__link" href="catalog.html?view=card">
-              <span class="visually-hidden">Отображать блоками</span>
-            </a>
-          </li>
-          <li class="display-types__item">
-            <a class="display-types__link" href="catalog.html?view=list">
-              <span class="visually-hidden">Отображать списком</span>
-            </a>
-          </li>
-        </ul>
+        <div class="catalog__wrapper">
+          <h2 class="catalog__title title">Найдено гостиниц: 38</h2>
+          <select class="select-sorting" name="sorting" aria-label="Сортировка">
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
+          <ul class="display-types__list">
+            <li class="display-types__item">
+              <a class="display-types__link display-types__link--active" href="catalog.html?view=tile">
+                <span class="visually-hidden">Отображать карточками</span>
+              </a>
+            </li>
+            <li class="display-types__item">
+              <a class="display-types__link" href="catalog.html?view=card">
+                <span class="visually-hidden">Отображать блоками</span>
+              </a>
+            </li>
+            <li class="display-types__item">
+              <a class="display-types__link" href="catalog.html?view=list">
+                <span class="visually-hidden">Отображать списком</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <ul class="catalog__list">
           <li class="catalog__item">
             <h3 class="catalog__item-title">
